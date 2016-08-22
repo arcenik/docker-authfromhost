@@ -1,5 +1,5 @@
 ################################################################################
-FROM eboraas/debian:jessie
+FROM eboraas/debian:latest
 MAINTAINER Francois Scala "github@arcenik.net"
 
 ################################################################################
