@@ -20,8 +20,8 @@ This allow you to authenticate in your containers services using your host accou
 The pipe from sssd daemon must be exported from the host to the container
 
 ```
-$ docker run -ti --rm -v \
-  /var/lib/sss/pipes/:/var/lib/sss/pipes/ \
+$ docker run -ti --rm \
+  -v /var/lib/sss/pipes/:/var/lib/sss/pipes/ \
   francois75/docker-authfromhost:debian-jessie \
   /bin/bash -l
 ```
