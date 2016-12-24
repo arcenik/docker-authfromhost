@@ -2,15 +2,24 @@
 This allow you to authenticate in your containers services using your host account (from this [blog post](https://jhrozek.wordpress.com/2015/03/31/authenticating-a-docker-container-against-hosts-unix-accounts/))
 
 ----
+#### Current test status
+
+| | Status|
+|---|---|
+| Travis-CI | [![](https://travis-ci.org/arcenik/docker-authfromhost.svg?branch=master)](https://travis-ci.org/arcenik/docker-authfromhost)|
+
 ## Versions
+
+This docker image is available with the following base systems.
 
 #### Debian
 
-* debian (latest) [![](https://images.microbadger.com/badges/image/francois75/docker-authfromhost:debian.svg)](http://microbadger.com/images/francois75/docker-authfromhost:debian "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/francois75/docker-authfromhost:debian.svg)](http://microbadger.com/images/francois75/docker-authfromhost:debian "Get your own version badge on microbadger.com")
-* debian-jessie [![](https://images.microbadger.com/badges/image/francois75/docker-authfromhost:debian-jessie.svg)](http://microbadger.com/images/francois75/docker-authfromhost:debian-jessie "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/francois75/docker-authfromhost:debian-jessie.svg)](http://microbadger.com/images/francois75/docker-authfromhost:debian-jessie "Get your own version badge on microbadger.com")
-* debian-stable [![](https://images.microbadger.com/badges/image/francois75/docker-authfromhost:debian-stable.svg)](http://microbadger.com/images/francois75/docker-authfromhost:debian-stable "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/francois75/docker-authfromhost:debian-stable.svg)](http://microbadger.com/images/francois75/docker-authfromhost:debian-stable "Get your own version badge on microbadger.com")
-* debian-testing [![](https://images.microbadger.com/badges/image/francois75/docker-authfromhost:debian-testing.svg)](http://microbadger.com/images/francois75/docker-authfromhost:debian-testing "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/francois75/docker-authfromhost:debian-testing.svg)](http://microbadger.com/images/francois75/docker-authfromhost:debian-testing "Get your own version badge on microbadger.com")
-* debian-sid [![](https://images.microbadger.com/badges/image/francois75/docker-authfromhost:debian-sid.svg)](http://microbadger.com/images/francois75/docker-authfromhost:debian-sid "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/francois75/docker-authfromhost:debian-sid.svg)](http://microbadger.com/images/francois75/docker-authfromhost:debian-sid "Get your own version badge on microbadger.com")
+|debian (latest)| [![](https://images.microbadger.com/badges/image/francois75/docker-authfromhost:debian.svg)](http://microbadger.com/images/francois75/docker-authfromhost:debian "Get your own image badge on microbadger.com")|[![](https://images.microbadger.com/badges/version/francois75/docker-authfromhost:debian.svg)](http://microbadger.com/images/francois75/docker-authfromhost:debian "Get your own version badge on microbadger.com")
+|---|---|---|
+|debian-jessie| [![](https://images.microbadger.com/badges/image/francois75/docker-authfromhost:debian-jessie.svg)](http://microbadger.com/images/francois75/docker-authfromhost:debian-jessie "Get your own image badge on microbadger.com")|[![](https://images.microbadger.com/badges/version/francois75/docker-authfromhost:debian-jessie.svg)](http://microbadger.com/images/francois75/docker-authfromhost:debian-jessie "Get your own version badge on microbadger.com")|
+|debian-stable|[![](https://images.microbadger.com/badges/image/francois75/docker-authfromhost:debian-stable.svg)](http://microbadger.com/images/francois75/docker-authfromhost:debian-stable "Get your own image badge on microbadger.com")|[![](https://images.microbadger.com/badges/version/francois75/docker-authfromhost:debian-stable.svg)](http://microbadger.com/images/francois75/docker-authfromhost:debian-stable "Get your own version badge on microbadger.com")
+|debian-testing|[![](https://images.microbadger.com/badges/image/francois75/docker-authfromhost:debian-testing.svg)](http://microbadger.com/images/francois75/docker-authfromhost:debian-testing "Get your own image badge on microbadger.com")|[![](https://images.microbadger.com/badges/version/francois75/docker-authfromhost:debian-testing.svg)](http://microbadger.com/images/francois75/docker-authfromhost:debian-testing "Get your own version badge on microbadger.com")
+|debian-sid|[![](https://images.microbadger.com/badges/image/francois75/docker-authfromhost:debian-sid.svg)](http://microbadger.com/images/francois75/docker-authfromhost:debian-sid "Get your own image badge on microbadger.com")|[![](https://images.microbadger.com/badges/version/francois75/docker-authfromhost:debian-sid.svg)](http://microbadger.com/images/francois75/docker-authfromhost:debian-sid "Get your own version badge on microbadger.com")
 
 ----
 ## Usage
