@@ -1,0 +1,17 @@
+---
+- name: Create test dir
+  file:
+    name: "/test"
+    state: directory
+
+- name: Create test-one test script
+  template:
+    src: "{{ role_path }}/files/test-one.sh.j2"
+    dest: "/test/test-one.sh"
+    mode: 0755
+
+- name: Create test-all test script
+  template:
+    src: "{{ role_path }}/files/test-all.sh.j2"
+    dest: "/test/test-all.sh"
+    mode: 0755

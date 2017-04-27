@@ -1,0 +1,19 @@
+#! /bin/bash
+
+{% for user in users %}
+
+id {{ user.name }} &> /dev/null
+if [ $? != 0 ]
+then
+  echo "FAILED, {{ user.name }} should exists"
+  exit 255
+fi
+
+{% endfor %}
+
+id not_exist_user &> /dev/null
+if [ $? != 1 ]
+then
+  echo "FAILED, not_exist_user should not exists"
+  exit 255
+fi

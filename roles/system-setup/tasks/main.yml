@@ -1,0 +1,47 @@
+---
+# - name: Upgrade base system
+#   apt:
+#     update_cache: yes
+#     upgrade: full
+#
+# - name: Install required packages
+#   with_items:
+#   - sssd
+#   - psmisc
+#   - docker.io
+#   - python-pip
+#   apt:
+#     name: "{{ item }}"
+#     state: latest
+#
+# - name: Install Python requirements
+#   with_items:
+#   - docker-py
+#   pip:
+#     name: "{{ item }}"
+#     state: present
+#
+- name: Enable Docker
+  service:
+    name: "docker"
+    state: started
+    enabled: yes
+
+- name: Create users
+  with_items: "{{ users }}"
+  user:
+    name: "{{ item.name }}"
+    uid: "{{ item.uid }}"
+
+- name: Configure sssd
+  copy:
+    src: "{{ role_path }}/files/sssd.conf"
+    dest: "/etc/sssd/sssd.conf"
+    mode: 0600
+  notify: restart sssd
+
+- name: SSSd service
+  service:
+    name: "sssd"
+    state: started
+    enabled: yes

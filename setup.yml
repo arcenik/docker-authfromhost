@@ -1,0 +1,27 @@
+---
+- hosts:
+  - localhost
+  become: true
+
+  roles:
+  - system-setup
+  - docker-images
+  - make-tests
+
+  vars:
+    docker:
+      basename: "docker-authfromhost"
+      versions:
+      - "debian"
+      - "debian-stable"
+      - "debian-jessie"
+      - "debian-testing"
+      - "debian-stretch"
+      - "debian-sid"
+    users:
+    - name: user500
+      uid: 500
+    - name: user501
+      uid: 501
+    - name: user502
+      uid: 502

@@ -1,0 +1,22 @@
+---
+- name: Upgrade base system
+  apt:
+    update_cache: yes
+    upgrade: full
+
+- name: Install required packages
+  with_items:
+  - sssd
+  - psmisc
+  - docker.io
+  - python-pip
+  apt:
+    name: "{{ item }}"
+    state: latest
+
+- name: Install Python requirements
+  with_items:
+  - docker-py
+  pip:
+    name: "{{ item }}"
+    state: present

@@ -1,0 +1,25 @@
+#! /bin/bash
+
+RES=0
+
+{% for version in docker.versions %}
+
+echo -n "Testing {{ version }} : "
+
+output=$(docker run \
+-v "/var/lib/sss/pipes/:/var/lib/sss/pipes/" \
+-v "/test:/test" \
+{{ docker.basename }}:{{ version }} \
+/test/test-one.sh)
+
+if [ $? == 0 ]
+then
+  echo " ok "
+else
+  echo " failed (${output}) !"
+  RES=255
+fi
+
+{% endfor %}
+
+exit ${RES}
