@@ -1,5 +1,5 @@
 ################################################################################
-FROM debian:sid
+FROM debian:jessie-slim
 MAINTAINER Francois Scala "github@arcenik.net"
 
 # Set apt-get to automatically retry if a package download fails

@@ -1,12 +1,1 @@
-#! /bin/bash -x
-
-. .conf || { echo "Missing .conf file"; exit 1; }
-
-SSSDPIPE="/var/lib/sss/pipes/"
-
-docker run -ti --rm \
-	--name ${NAME} \
-	--hostname ${NAME} \
-	-v "${SSSDPIPE}:/var/lib/sss/pipes/" \
-	${IMG}:${TAG} \
-	/bin/bash -l
+../shared/test
