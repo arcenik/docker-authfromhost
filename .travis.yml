@@ -12,8 +12,9 @@ language: python
 python: "3.6"
 
 install:
+- sudo apt-get install -qq sssd
 - pip install ansible docker-py
+- ansible-playbook setup.yml --extra-vars "builddir=${TRAVIS_BUILD_DIR}/"
 
 script:
-- ansible-playbook setup.yml --extra-vars "builddir=${TRAVIS_BUILD_DIR}/"
 - /test/test-all.sh
