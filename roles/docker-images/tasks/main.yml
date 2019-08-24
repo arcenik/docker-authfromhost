@@ -8,8 +8,3 @@
       path: "{{ builddir }}/{{ item }}/"
     source: build
     state: present
-
-
-[WARNING]: The value of the "source" option was determined to be "build".
-Please set the "source" option explicitly. Autodetection will be removed in
-Ansible 2.12.
