@@ -3,6 +3,8 @@
   with_items: "{{ docker.versions }}"
   docker_image:
     name: "{{ docker.basename }}:{{ item }}"
-    dockerfile: "{{ builddir }}/{{ item }}/Dockerfile"
-    path: "{{ builddir }}/{{ item }}/"
-    state: build
+    build:
+      dockerfile: "{{ builddir }}/{{ item }}/Dockerfile"
+      path: "{{ builddir }}/{{ item }}/"
+    source: build
+    state: present

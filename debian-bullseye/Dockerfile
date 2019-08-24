@@ -1,5 +1,5 @@
 ################################################################################
-FROM debian:jessie-slim
+FROM debian:bullseye
 MAINTAINER Francois Scala "github@arcenik.net"
 
 # Set apt-get to automatically retry if a package download fails

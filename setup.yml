@@ -12,12 +12,12 @@
     docker:
       basename: "docker-authfromhost"
       versions:
-      - "debian-jessie"
-      - "debian-jessie-slim"
       - "debian-stretch"
       - "debian-stretch-slim"
       - "debian-buster"
       - "debian-buster-slim"
+      - "debian-bullseye"
+      - "debian-bullseye-slim"
       - "debian-sid"
       - "debian-sid-slim"
     users:
