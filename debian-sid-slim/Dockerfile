@@ -8,11 +8,13 @@ ADD http://httpredir.debian.org/debian/project/trace/ftp-master.debian.org /etc/
 ADD http://security.debian.org/project/trace/security-master.debian.org /etc/trace_security-master.debian.org
 
 # Update and install sssd
-RUN apt-get -qq update &&\
- DEBIAN_FRONTEND=noninteractive apt-get -yqq dist-upgrade &&\
- DEBIAN_FRONTEND=noninteractive apt-get -yqq install sssd &&\
- DEBIAN_FRONTEND=noninteractive apt-get -yqq autoremove &&\
- apt-get -qq clean &&\
+RUN set -xe ;\
+ apt-get -qq update ;\
+ DEBIAN_FRONTEND=noninteractive apt-get -yqq install apt-utils ;\
+ DEBIAN_FRONTEND=noninteractive apt-get -yqq dist-upgrade ;\
+ DEBIAN_FRONTEND=noninteractive apt-get -yqq install sssd ;\
+ DEBIAN_FRONTEND=noninteractive apt-get -yqq autoremove ;\
+ apt-get -qq clean ;\
  rm -rf /var/lib/apt/lists/*
 
 ADD files/sss_fromproxy /etc/pam.d/
