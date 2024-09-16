@@ -2,11 +2,6 @@
 This allow you to authenticate in your containers services using your host account (from this [blog post](https://jhrozek.wordpress.com/2015/03/31/authenticating-a-docker-container-against-hosts-unix-accounts/))
 
 ----
-#### Current test status
-
-| | Status|
-|---|---|
-| Travis-CI | [![](https://travis-ci.org/arcenik/docker-authfromhost.svg?branch=master)](https://travis-ci.org/arcenik/docker-authfromhost)|
 
 ## Versions
 
@@ -16,14 +11,16 @@ This docker image is available with the following base systems.
 
 |Release|Size||
 |---|---|---|
-|debian-stretch| [![](https://images.microbadger.com/badges/image/francois75/docker-authfromhost:debian-stretch.svg)](http://microbadger.com/images/francois75/docker-authfromhost:debian-stretch "Get your own image badge on microbadger.com")|[![](https://images.microbadger.com/badges/version/francois75/docker-authfromhost:debian-stretch.svg)](http://microbadger.com/images/francois75/docker-authfromhost:debian-stretch "Get your own version badge on microbadger.com")|
-|debian-stretch-slim| [![](https://images.microbadger.com/badges/image/francois75/docker-authfromhost:debian-stretch-slim.svg)](http://microbadger.com/images/francois75/docker-authfromhost:debian-stretch-slim "Get your own image badge on microbadger.com")|[![](https://images.microbadger.com/badges/version/francois75/docker-authfromhost:debian-stretch-slim.svg)](http://microbadger.com/images/francois75/docker-authfromhost:debian-stretch-slim "Get your own version badge on microbadger.com")|
-|debian-buster| [![](https://images.microbadger.com/badges/image/francois75/docker-authfromhost:debian-buster.svg)](http://microbadger.com/images/francois75/docker-authfromhost:debian-buster "Get your own image badge on microbadger.com")|[![](https://images.microbadger.com/badges/version/francois75/docker-authfromhost:debian-buster.svg)](http://microbadger.com/images/francois75/docker-authfromhost:debian-buster "Get your own version badge on microbadger.com")|
-|debian-buster-slim| [![](https://images.microbadger.com/badges/image/francois75/docker-authfromhost:debian-buster-slim.svg)](http://microbadger.com/images/francois75/docker-authfromhost:debian-buster-slim "Get your own image badge on microbadger.com")|[![](https://images.microbadger.com/badges/version/francois75/docker-authfromhost:debian-buster-slim.svg)](http://microbadger.com/images/francois75/docker-authfromhost:debian-buster-slim "Get your own version badge on microbadger.com")|
-|debian-bullseye| [![](https://images.microbadger.com/badges/image/francois75/docker-authfromhost:debian-bullseye.svg)](http://microbadger.com/images/francois75/docker-authfromhost:debian-bullseye "Get your own image badge on microbadger.com")|[![](https://images.microbadger.com/badges/version/francois75/docker-authfromhost:debian-bullseye.svg)](http://microbadger.com/images/francois75/docker-authfromhost:debian-bullseye "Get your own version badge on microbadger.com")|
-|debian-bullseye-slim| [![](https://images.microbadger.com/badges/image/francois75/docker-authfromhost:debian-bullseye-slim.svg)](http://microbadger.com/images/francois75/docker-authfromhost:debian-bullseye-slim "Get your own image badge on microbadger.com")|[![](https://images.microbadger.com/badges/version/francois75/docker-authfromhost:debian-bullseye-slim.svg)](http://microbadger.com/images/francois75/docker-authfromhost:debian-bullseye-slim "Get your own version badge on microbadger.com")|
-|debian-sid| [![](https://images.microbadger.com/badges/image/francois75/docker-authfromhost:debian-sid.svg)](http://microbadger.com/images/francois75/docker-authfromhost:debian-sid "Get your own image badge on microbadger.com")|[![](https://images.microbadger.com/badges/version/francois75/docker-authfromhost:debian-sid.svg)](http://microbadger.com/images/francois75/docker-authfromhost:debian-sid "Get your own version badge on microbadger.com")|
-|debian-sid-slim| [![](https://images.microbadger.com/badges/image/francois75/docker-authfromhost:debian-sid-slim.svg)](http://microbadger.com/images/francois75/docker-authfromhost:debian-sid-slim "Get your own image badge on microbadger.com")|[![](https://images.microbadger.com/badges/version/francois75/docker-authfromhost:debian-sid-slim.svg)](http://microbadger.com/images/francois75/docker-authfromhost:debian-sid-slim "Get your own version badge on microbadger.com")|
+|debian-buster        | ![](https://img.shields.io/docker/image-size/francois75/docker-authfromhost/debian-buster.svg?style=for-the-badge) |
+|debian-buster-slim   | ![](https://img.shields.io/docker/image-size/francois75/docker-authfromhost/debian-buster-slim.svg?style=for-the-badge) |
+|debian-bullseye      | ![](https://img.shields.io/docker/image-size/francois75/docker-authfromhost/debian-bullseye.svg?style=for-the-badge) |
+|debian-bullseye-slim | ![](https://img.shields.io/docker/image-size/francois75/docker-authfromhost/debian-bullseye-slim.svg?style=for-the-badge) |
+|debian-bookworms     | ![](https://img.shields.io/docker/image-size/francois75/docker-authfromhost/debian-bookworms.svg?style=for-the-badge) |
+|debian-bookworms-slim| ![](https://img.shields.io/docker/image-size/francois75/docker-authfromhost/debian-bookworms-slim.svg?style=for-the-badge) |
+|debian-trixie        | ![](https://img.shields.io/docker/image-size/francois75/docker-authfromhost/debian-trixie.svg?style=for-the-badge) |
+|debian-trixie-slim   | ![](https://img.shields.io/docker/image-size/francois75/docker-authfromhost/debian-trixie-slim.svg?style=for-the-badge) |
+|debian-sid           | ![](https://img.shields.io/docker/image-size/francois75/docker-authfromhost/debian-sid.svg?style=for-the-badge) |
+|debian-sid-slim      | ![](https://img.shields.io/docker/image-size/francois75/docker-authfromhost/debian-sid-slim.svg?style=for-the-badge) |
 
 ----
 ## Usage

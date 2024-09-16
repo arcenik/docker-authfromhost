@@ -1,5 +1,5 @@
 ################################################################################
-FROM debian:bullseye
+FROM debian:trixie
 LABEL org.opencontainers.image.authors="github@arcenik.net"
 LABEL org.opencontainers.image.source="https://github.com/arcenik/docker-authfromhost"
 
