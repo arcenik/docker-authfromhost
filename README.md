@@ -15,8 +15,8 @@ This docker image is available with the following base systems.
 |debian-buster-slim   | ![](https://img.shields.io/docker/image-size/francois75/docker-authfromhost/debian-buster-slim.svg?style=for-the-badge) |
 |debian-bullseye      | ![](https://img.shields.io/docker/image-size/francois75/docker-authfromhost/debian-bullseye.svg?style=for-the-badge) |
 |debian-bullseye-slim | ![](https://img.shields.io/docker/image-size/francois75/docker-authfromhost/debian-bullseye-slim.svg?style=for-the-badge) |
-|debian-bookworms     | ![](https://img.shields.io/docker/image-size/francois75/docker-authfromhost/debian-bookworms.svg?style=for-the-badge) |
-|debian-bookworms-slim| ![](https://img.shields.io/docker/image-size/francois75/docker-authfromhost/debian-bookworms-slim.svg?style=for-the-badge) |
+|debian-bookworm      | ![](https://img.shields.io/docker/image-size/francois75/docker-authfromhost/debian-bookworm.svg?style=for-the-badge) |
+|debian-bookworm-slim | ![](https://img.shields.io/docker/image-size/francois75/docker-authfromhost/debian-bookworm-slim.svg?style=for-the-badge) |
 |debian-trixie        | ![](https://img.shields.io/docker/image-size/francois75/docker-authfromhost/debian-trixie.svg?style=for-the-badge) |
 |debian-trixie-slim   | ![](https://img.shields.io/docker/image-size/francois75/docker-authfromhost/debian-trixie-slim.svg?style=for-the-badge) |
 |debian-sid           | ![](https://img.shields.io/docker/image-size/francois75/docker-authfromhost/debian-sid.svg?style=for-the-badge) |
