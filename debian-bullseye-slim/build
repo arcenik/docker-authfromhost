@@ -1,5 +1,0 @@
-#! /bin/bash
-
-. .conf || { echo "Missing .conf file"; exit 1; }
-
-docker build -t ${IMG}:${TAG} .

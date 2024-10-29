@@ -11,16 +11,12 @@ This docker image is available with the following base systems.
 
 |Release|Size||
 |---|---|---|
-|debian-buster        | ![](https://img.shields.io/docker/image-size/francois75/docker-authfromhost/debian-buster.svg?style=for-the-badge) |
-|debian-buster-slim   | ![](https://img.shields.io/docker/image-size/francois75/docker-authfromhost/debian-buster-slim.svg?style=for-the-badge) |
-|debian-bullseye      | ![](https://img.shields.io/docker/image-size/francois75/docker-authfromhost/debian-bullseye.svg?style=for-the-badge) |
-|debian-bullseye-slim | ![](https://img.shields.io/docker/image-size/francois75/docker-authfromhost/debian-bullseye-slim.svg?style=for-the-badge) |
-|debian-bookworm      | ![](https://img.shields.io/docker/image-size/francois75/docker-authfromhost/debian-bookworm.svg?style=for-the-badge) |
-|debian-bookworm-slim | ![](https://img.shields.io/docker/image-size/francois75/docker-authfromhost/debian-bookworm-slim.svg?style=for-the-badge) |
-|debian-trixie        | ![](https://img.shields.io/docker/image-size/francois75/docker-authfromhost/debian-trixie.svg?style=for-the-badge) |
-|debian-trixie-slim   | ![](https://img.shields.io/docker/image-size/francois75/docker-authfromhost/debian-trixie-slim.svg?style=for-the-badge) |
-|debian-sid           | ![](https://img.shields.io/docker/image-size/francois75/docker-authfromhost/debian-sid.svg?style=for-the-badge) |
-|debian-sid-slim      | ![](https://img.shields.io/docker/image-size/francois75/docker-authfromhost/debian-sid-slim.svg?style=for-the-badge) |
+|debian-bookworm      | ![](https://img.shields.io/docker/image-size/francois75/docker-authfromhost/debian-bookworm-latest.svg?style=for-the-badge) |
+|debian-bookworm-slim | ![](https://img.shields.io/docker/image-size/francois75/docker-authfromhost/debian-bookworm-slim-latest.svg?style=for-the-badge) |
+|debian-trixie        | ![](https://img.shields.io/docker/image-size/francois75/docker-authfromhost/debian-trixie-latest.svg?style=for-the-badge) |
+|debian-trixie-slim   | ![](https://img.shields.io/docker/image-size/francois75/docker-authfromhost/debian-trixie-slim-latest.svg?style=for-the-badge) |
+|debian-sid           | ![](https://img.shields.io/docker/image-size/francois75/docker-authfromhost/debian-sid-latest.svg?style=for-the-badge) |
+|debian-sid-slim      | ![](https://img.shields.io/docker/image-size/francois75/docker-authfromhost/debian-sid-slim-latest.svg?style=for-the-badge) |
 
 ----
 ## Usage
@@ -32,7 +28,7 @@ The pipe from sssd daemon must be exported from the host to the container
 ```
 $ docker run -ti --rm \
   -v /var/lib/sss/pipes/:/var/lib/sss/pipes/ \
-  francois75/docker-authfromhost:debian-buster \
+  francois75/docker-authfromhost:debian-bookworm-latest \
   /bin/bash -l
 ```
 
@@ -41,7 +37,7 @@ $ docker run -ti --rm \
 Use it like any other images, using the tag to specify the system and release.
 
 ```
-FROM fancois75/docker-authfromhost:debian
+FROM fancois75/docker-authfromhost:debian-bookworm-latest
 ```
 
 ----
